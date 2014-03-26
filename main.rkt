@@ -33,7 +33,7 @@
        ('text text)
        ('user (hash-table ('screen_name user) _ ...))
        _ ...)
-     (make-hasheq `((id ,id) (user ,user) (text ,text)))]
+     (make-hasheq `((id . ,id) (user . ,user) (text . ,text)))]
     [_ #f]))
 
 (define *tweets* '())
